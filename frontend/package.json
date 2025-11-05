@@ -2,15 +2,16 @@
   "name": "react-kavia",
   "version": "0.1.0",
   "private": true,
+  "description": "Recipe Explorer frontend - React (CRA5) template",
   "dependencies": {
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "react-scripts": "^5.0.1"
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-scripts": "5.0.1"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test",
+    "test": "react-scripts test --watchAll=false",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
@@ -29,6 +30,24 @@
     ]
   },
   "devDependencies": {
-    "cross-env": "^7.0.3"
-  }
+    "cross-env": "^7.0.3",
+    "@testing-library/jest-dom": "^6.6.3",
+    "@testing-library/react": "^16.0.1",
+    "@testing-library/user-event": "^14.5.2"
+  },
+  "overrides": {
+    "browserslist": "^4.24.2",
+    "semver": "^7.6.3"
+  },
+  "engines": {
+    "node": ">=16.14.0"
+  },
+  "keywords": [
+    "react",
+    "create-react-app",
+    "recipes"
+  ],
+  "changelog": [
+    "2025-11-05: Dependency refresh - react/react-dom to ^18.3.1, testing library packages to latest; keep react-scripts at 5.0.1 for CRA5 compatibility. Added overrides for browserslist and semver to address known advisories."
+  ]
 }

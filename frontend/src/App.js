@@ -43,6 +43,9 @@ function App() {
     <div className="App">
       <header className="App-header">
         <p>Recipe Explorer</p>
+        <h1 style={{ position: 'absolute', left: -9999, top: 'auto', width: 1, height: 1, overflow: 'hidden' }}>
+          Recipe Explorer
+        </h1>
       </header>
     </div>
   );
