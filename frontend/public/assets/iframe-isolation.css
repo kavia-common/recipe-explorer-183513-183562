@@ -1,0 +1,7 @@
+:root, html, body {
+  /* Keep host app minimal to avoid interfering with iframe content */
+  box-sizing: border-box;
+}
+*, *::before, *::after {
+  box-sizing: inherit;
+}
